@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>OUTsMART</title>
+    <style>
+    header{
+        position: relative;
+        top:0; left:0; right:0;
+        padding:2px;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        box-shadow: 0.1rem 0.1rem #88888888;
+    }
+    header h2
+    {
+        color:black;
+        padding: 0px,25px;
+        margin-left:50px;
+    }
+    .navbar a
+    {
+        padding: 0px 10px;
+        text-decoration:none;
+        color:black;
+    }
+    .navbar a:hover
+    {
+        color: purple;
+
+    } 
+    .con1{
+        display:grid;
+        grid-template-columns: 30.5% 30.5% 30.5%;
+        column-gap:40px;
+        height: 300px;
+        padding: 50px;
+        transition: all .40s;
+    }
+    .one{
+        /* background-image: url({{asset('images/c2.jpg')}}); */
+        background-repeat: no-repeat;
+        transition: all .40s;
+        height: auto;
+    }
+    .two{
+        /* background-image: url({{asset('images/Capture.PNG')}}); */
+    }
+    .three{
+        /* background-image: url({{asset('images/c11.jpg')}}); */
+    }
+    section{
+        padding: 5%;
+    }
+    .main-home{
+        width: 90%;
+        height: 400px;
+        background-image: url('2.webp');
+        background-position: center;
+        background-size: cover;    
+    }
+    .main-text h5{
+        color: black;
+        font-size: 16px;
+        text-transform: capitalize;
+        font-weight: 500;
+    }
+    .main-text h1{
+        font-size: 65px;
+        text-transform: capitalize;
+        font-weight: 600;
+        line-height: 1.1;
+        margin: 6px 0 10px;
+    }
+    .main-btn{
+        display: inline-block;
+        color:white;
+        font-size: 16;
+        font-weight: 500;
+        background-color: black;
+        border: 2px solid black;
+        padding: 12px;
+        border-radius: 7%;
+    }
+    .main-btn:hover{
+        background-color:  rgb(172, 55, 172);
+        color: white;
+    }
+    .main-btn i{
+        vertical-align: middle;
+    }
+    .center-text h2{
+        font-size: 28px;
+        text-align: center;
+    }
+    .center-text span{
+        color: red;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        gap: 5px;
+        padding: 20px;
+        transition: all .40s;
+        margin-left: 20px;
+    }
+    .row{
+        position: relative;
+        padding:-40px;
+    }
+    .row img{
+        transition: all .40s;
+        image: cover;
+        height: auto;
+    }
+    .row img:hover{
+        transform: scale(0.9);
+    }
+    .product-text h5{
+        position: absolute;
+        top: -13px;
+        left: 3px;
+        color: aliceblue;
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        background-color: rgb(35, 156, 35);
+        padding: 2px;
+        border-radius: 2px;
+    }
+    .heart{
+        position: absolute;
+        font-size: 20px;
+        margin-left: 190px;
+    }
+    .heart:hover{
+        color: red;
+    }
+    .ratting{
+        color: rgb(255, 255, 0);
+        font-sixe: 18px;
+    }
+    .price h4{
+        color: black;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .price{
+        color: black;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .client-reviews{
+        background-color: #f4f4f4;
+    }
+    .reviews{
+        text-align: center;  
+    }
+    .reviews h3{
+        font-size: 25px;
+        text-align: center
+    }
+    .reviews img{
+        width:90px;
+        height:60px;
+        border-radius: 50px;
+        margin: 10px;
+    }
+    .contact{
+        background-color: rgb(192, 183, 194);
+    }
+    .contact-info{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+        gap: 3px;
+        margin-left: 10px;
+    }
+    .end-text{
+        background-color:antiquewhite;
+        text-align: center;
+        padding: 20px;
+    }
+    .cat{
+        background-color: rgb(243, 233, 238);
+
+   }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>OUTsMart </h2>
+        <div class="navbar">
+            <a href="home">Home</a>
+            <a href="product">Product</a>
+            <a href="about">Aboutus</a>  
+            <a href="Contactus">Contact us </a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            <a href="#favout"><i class="fas fa-heart"></i></a>
+
+        </div>
+    </header>
+
+    <section class="main-home">
+        <div class="main-text">
+            <h5>"where convenience meets quality, and every <br>click brings you closer to your shopping desires."</h5>
+            <h1>OUTsMART</h1>
+            <a href="#" class="main-btn">Shop <i class="bx bx-right-arrow-alt"></i></a>
+        </div>
+    </section>
+<br>
+
+<section class="cat">
+    <h1 Style="text-align: center;">Catagory</h1>
+    <div class="products">
+            <div class="row">
+                    <img style="width: 90%;" src="c2.jpg" alt=""> 
+                
+                <div>
+                    <h2>Makeup</h2>
+                </div>
+            </div>
+            <div class="row">
+            <img style="width: 90%; height:225px;" src="z.jpg" alt=""> 
+                <div>
+                    <h2>Crockery</h2>
+                </div>
+            </div>
+            <div class="row">
+            <img style="width: 90%;" src="c11.jpg" alt=""> 
+                <div>
+                    <h2>Dress</h2>
+                </div>
+            </div>
+    </div>
+    </section>
+    <section class="trending">
+        <div class="center-text">
+            <h2>Our Trending <span>Products</span></h2>
+        </div>
+
+        <div class="products">
+            <div class="row">
+                <img style="margin-left: 30px;" src="f2.jpg" alt="">
+                <div   class="product-text">
+                    <h5>Sale</h5>
+                </div>
+                <div  class="heart">
+                    <i class="bx bx-heart"></i>
+                </div>
+                <div style="margin-left: 30px;" class="ratting">
+                    <i class="bx bx-star"></i>
+                    <i class="bx bx-star"></i>
+                    <i class="bx bx-star"></i>
+                    <i class="bx bx-star"></i>
+                    <i class="bx bxs-star-half"></i>
+                </div>
+                <div style="margin-left: 30px;" class="price">
+                    <h4>Maxy</h4>
+                    <p>Rs. 2500</p>
+                    <button style=" margin-left:90px; " class="buy-2"> </button>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="d3.jpg" alt="">
+                <div class="product-text">
+                    <h5>Sale</h5>
+                </div>
+                <div class="heart">
+                    <i class="bx bx-heart"></i>
+                </div>
+                <div class="ratting">
+                    <i class="bx bx-star"></i>
+                    <i class="bx bx-star"></i>
+                    <i class="bx bx-star"></i>
+                    <i class="bx bx-star"></i>
+                    <i class="bx bxs-star-half"></i>
+                </div>
+                <div class="price">
+                    <h4>Black Heels</h4>
+                    <p>Rs. 2000</p>
+                    <button style=" margin-left:90px; " class="buy-2"></button>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="h6.jpg" alt="">
+                <div class="product-text">
+                    <h5>Sale</h5>
+                </div>
+                <div class="heart">
+                    <i class="bx bx-heart"></i>
+                </div>
+                <div class="ratting">
+                    <i class="bx bx-star"></i>
+                    <i class="bx bx-star"></i>
+                    <i class="bx bx-star"></i>
+                    <i class="bx bx-star"></i>
+                    <i class="bx bxs-star-half"></i>
+                </div>
+                <div class="price">
+                    <h4>Couches</h4>
+                    <p>Rs. 15000</p>
+                    <button style=" margin-left:90px; " class="buy-2"></button>
+
+                </div>
+            </div>
+
+            <div class="row" style= "margin-left: 22px;">
+                <img src="d7.jpg" alt="">
+                <div class="product-text">
+                    <h5>Sale</h5>
+                </div>
+                <div class="heart">
+                    <i class="bx bx-heart"></i>
+                </div>
+                <div class="ratting">
+                    <i class="bx bx-star"></i>
+                    <i class="bx bx-star"></i>
+                    <i class="bx bx-star"></i>
+                    <i class="bx bx-star"></i>
+                    <i class="bx bxs-star-half"></i>
+                </div>
+                <div class="price">
+                    <h4>Blue Plates</h4>
+                    <p>Rs. 5000</p>
+                    <button style=" margin-left:90px; " class="buy-2"> </button>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="d8.jpg" alt="">
+                <div class="product-text">
+                    <h5>Sale</h5>
+                </div>
+                <div class="heart">
+                    <i class="bx bx-heart"></i>
+                </div>
+                <div class="ratting">
+                    <i class="bx bx-star"></i>
+                    <i class="bx bx-star"></i>
+                    <i class="bx bx-star"></i>
+                    <i class="bx bx-star"></i>
+                    <i class="bx bxs-star-half"></i>
+                </div>
+                <div class="price">
+                    <h4>Shoes</h4>
+                    <p>Rs. 2500</p>
+                    <button style=" margin-left:90px; " class="buy-2"> </button>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="j1.jpg" alt="">
+                <div class="product-text">
+                    <h5>Sale</h5>
+                </div>
+                <div class="heart">
+                    <i class="bx bx-heart"></i>
+                </div>
+                <div class="ratting">
+                    <i class="bx bx-star"></i>
+                    <i class="bx bx-star"></i>
+                    <i class="bx bx-star"></i>
+                    <i class="bx bx-star"></i>
+                    <i class="bx bxs-star-half"></i>
+                </div>
+                <div class="price">
+                    <h4>Blue Shirt</h4>
+                    <p>Rs. 2500</p>
+                    <button style=" margin-left:90px; " class="buy-2"> </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="client-reviews">
+        <div class="reviews">
+            <h3>Clients Reviews</h3>
+            <img src="p1.jpg" alt="">
+            <p>"I've been a loyal customer of this ecommerce store for years, and they never disappoint. Their products are top-notch, and their customer service is exceptional. Always a pleasure to shop here!" </p>
+            <h2>- Michael S.</h2>
+        </div>
+    </section>
+<br>
+    <section class="contact">
+        <div class="contact-info">
+
+            <div class="first-info">
+                <p>Islamabad <br> Pakistan</p>
+                <p>0300 6787987</p>
+                <p>outsmart@gmail.com</p>
+
+                <div style="font-size:30px;" class="social-icon">
+                <a style="color:rgb(10, 10, 117);" href="#"><i class='bx bxl-facebook'></i></a>
+                <a style="color:rgb(35, 35, 128);"href="#"><i class='bx bxl-twitter'></i></a>
+                <a  style="color:rgb(117, 10, 10);"href="#"><i class='bx bxl-instagram'></i></a>
+                <a  style="color:rgb(42, 42, 102);" href="#"><i class='bx bxl-linkedin'></i></a>
+                <a  style="color:rgb(131, 7, 7);" href="#"><i class='bx bxl-youtube'></i></a>
+                </div>  
+            </div>
+
+            <div class="second-info">
+                <h4>Support</h4>
+                <p>Contact Us</p>
+                <p>About page</p>
+                <p>Size Guide</p>
+                <p>Shopping & Returns</p>
+                <p>Privacy</p>
+            </div>
+            <div class="third-info">
+                <h4>Shop</h4>
+                <p>Men's Shopping</p>
+                <p>Women's Shopping</p>
+                <p>Kid's Shopping</p>
+                <p>Furniture</p>
+                <p>Discount</p>
+            </div>
+            <div class="fourth-info">
+                <h4>Company</h4>
+                <p>About</p>
+                <p>Blog</p>
+                <p>Affiliate</p>
+                <p>Login</p>
+            </div>
+            <div class="fifth">
+                <h4>Subscribe</h4>
+                <p>Recieve Updates, Discounts Sent Straight In Your Inbox</p>
+            </div>
+        </div>
+    </section>
+    <br>
+    <div class="end-text">
+        <p>Copyright @2023. All rights reserved.</p>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
